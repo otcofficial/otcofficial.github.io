@@ -1,56 +1,660 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Online Tasbih Counter</title>
 
-<meta name="description" content="Free Online Tasbih Counter and Tally Counter for daily counting.">
+<title>Online Tasbih Counter | Free Digital Tasbih & Tally Counter</title>
+
+<meta name="description"
+content="Free Online Tasbih Counter and Digital Tally Counter for dhikr, meditation, exercise, attendance, inventory counting and more.">
+
+<meta name="keywords"
+content="Tasbih Counter, Digital Tasbih, Online Counter, Tally Counter, Click Counter">
+
+<meta property="og:title"
+content="Online Tasbih Counter">
+
+<meta property="og:description"
+content="Free Online Tasbih Counter & Tally Counter">
+
+<meta property="og:type"
+content="website">
+
+<meta property="og:url"
+content="https://otcofficial.github.io/">
+
+<meta property="og:image"
+content="https://onlinetasbihcounter.com/wp-content/uploads/2026/07/online-tasbih-counter.webp">
 
 <style>
-body{
+
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+background:#05080F;
+color:white;
 font-family:Arial,sans-serif;
+line-height:1.7;
+
+}
+
+header{
+
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
 background:#0b101a;
-color:#fff;
-text-align:center;
-padding:60px 20px;
+position:sticky;
+top:0;
+
 }
-h1{
+
+.logo{
+
+font-size:28px;
+font-weight:bold;
 color:#B2FF2E;
-font-size:48px;
+
 }
-p{
-max-width:700px;
-margin:auto;
+
+nav a{
+
+color:white;
+text-decoration:none;
+margin-left:30px;
+
+}
+
+nav a:hover{
+
+color:#B2FF2E;
+
+}
+
+.hero{
+
+padding:90px 8%;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:60px;
+flex-wrap:wrap;
+
+}
+
+.hero-left{
+
+flex:1;
+
+}
+
+.hero-right{
+
+flex:1;
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:60px;
+color:#B2FF2E;
+margin-bottom:20px;
+
+}
+
+.hero p{
+
 font-size:20px;
-line-height:1.6;
+color:#d8d8d8;
+margin-bottom:35px;
+
 }
+
 .btn{
+
 display:inline-block;
-margin-top:35px;
-padding:15px 35px;
+padding:16px 34px;
 background:#B2FF2E;
 color:#000;
-text-decoration:none;
 font-weight:bold;
+text-decoration:none;
 border-radius:8px;
+margin-right:15px;
+margin-top:10px;
+
 }
+
+.btn:hover{
+
+background:white;
+
+}
+
+.hero img{
+
+width:100%;
+max-width:520px;
+border-radius:18px;
+box-shadow:0 0 35px rgba(178,255,46,.25);
+
+}
+
+section{
+
+padding:90px 8%;
+
+}
+
+h2{
+
+font-size:40px;
+margin-bottom:20px;
+color:#B2FF2E;
+
+}
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+
+}
+
+.card{
+
+background:#111827;
+padding:30px;
+border-radius:12px;
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.card h3{
+
+margin-bottom:15px;
+color:#B2FF2E;
+
+}
+  .features-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+
+}
+
+.feature{
+
+background:#111827;
+padding:30px;
+border-radius:12px;
+
+}
+
+.feature h3{
+
+color:#B2FF2E;
+margin-bottom:12px;
+
+}
+
+.stats{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:25px;
+text-align:center;
+
+}
+
+.stat{
+
+background:#111827;
+padding:35px;
+border-radius:12px;
+
+}
+
+.stat h2{
+
+font-size:42px;
+margin-bottom:10px;
+
+}
+
+.faq{
+
+margin-top:40px;
+
+}
+
+.faq-item{
+
+background:#111827;
+padding:25px;
+margin-bottom:20px;
+border-radius:10px;
+
+}
+
+.faq-item h3{
+
+color:#B2FF2E;
+margin-bottom:10px;
+
+}
+
+footer{
+
+padding:50px 8%;
+background:#0b101a;
+text-align:center;
+color:#aaa;
+
+}
+
+@media(max-width:900px){
+
+.hero{
+
+flex-direction:column;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+nav{
+
+display:none;
+
+}
+
+}
+
 </style>
 
 </head>
 
 <body>
 
-<h1>Online Tasbih Counter</h1>
+<header>
+
+<div class="logo">
+
+Online Tasbih Counter
+
+</div>
+
+<nav>
+
+<a href="https://onlinetasbihcounter.com/" target="_blank">Home</a>
+
+<a href="https://onlinetasbihcounter.com/blog/" target="_blank">Blog</a>
+
+<a href="https://onlinetasbihcounter.com/about-us/" target="_blank">About</a>
+
+<a href="https://onlinetasbihcounter.com/contact-us/" target="_blank">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-left">
+
+<h1>
+
+Free Online Tasbih Counter
+
+</h1>
 
 <p>
-Free online Tasbih Counter and Tally Counter for dhikr, meditation, exercise, inventory counting, attendance, and everyday counting.
+
+Count Tasbih, Dhikr, Exercise Repetitions,
+Attendance, Inventory, Meditation and
+much more with our free online counter.
+
 </p>
 
-<a class="btn" href="https://onlinetasbihcounter.com/" target="_blank">
-Visit OnlineTasbihCounter.com
+<a class="btn"
+href="https://onlinetasbihcounter.com/"
+target="_blank">
+
+Launch Counter
+
 </a>
 
+<a class="btn"
+href="https://onlinetasbihcounter.com/blog/"
+target="_blank">
+
+Read Blog
+
+</a>
+
+</div>
+
+<div class="hero-right">
+
+<img
+src="https://onlinetasbihcounter.com/wp-content/uploads/2026/07/online-tasbih-counter.webp"
+alt="Online Tasbih Counter">
+
+</div>
+
+</section>
+
+<section>
+
+<h2>
+
+Why Choose Online Tasbih Counter?
+
+</h2>
+
+<div class="features-grid">
+
+<div class="feature">
+
+<h3>Digital Tasbih Counter</h3>
+
+<p>
+
+Perfect for daily Dhikr and Tasbih counting.
+
+</p>
+
+</div>
+
+<div class="feature">
+
+<h3>Digital Tally Counter</h3>
+
+<p>
+
+Count inventory, attendance,
+events and much more.
+
+</p>
+
+</div>
+
+<div class="feature">
+
+<h3>Auto Save</h3>
+
+<p>
+
+Your count stays saved
+automatically.
+
+</p>
+
+</div>
+
+<div class="feature">
+
+<h3>Works Everywhere</h3>
+
+<p>
+
+Desktop, tablet and mobile friendly.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>
+
+Trusted by Everyday Users
+
+</h2>
+
+<div class="stats">
+
+<div class="stat">
+
+<h2>24/7</h2>
+
+<p>Available Anytime</p>
+
+</div>
+
+<div class="stat">
+
+<h2>100%</h2>
+
+<p>Free To Use</p>
+
+</div>
+
+<div class="stat">
+
+<h2>∞</h2>
+
+<p>Unlimited Counting</p>
+
+</div>
+
+<div class="stat">
+
+<h2>1 Click</h2>
+
+<p>Easy Counting</p>
+
+</div>
+
+</div>
+
+</section>
+<section>
+
+<h2>
+
+Frequently Asked Questions
+
+</h2>
+
+<div class="faq">
+
+<div class="faq-item">
+
+<h3>What is an Online Tasbih Counter?</h3>
+
+<p>
+
+An Online Tasbih Counter is a free digital tool that helps you count dhikr, tasbih, prayers, meditation sessions, exercise repetitions, attendance, and more directly from your browser.
+
+</p>
+
+</div>
+
+<div class="faq-item">
+
+<h3>Does the counter save my progress?</h3>
+
+<p>
+
+Yes. The counter automatically saves your count in your browser, so you can continue later without losing your progress.
+
+</p>
+
+</div>
+
+<div class="faq-item">
+
+<h3>Is it free?</h3>
+
+<p>
+
+Yes. Online Tasbih Counter is completely free and works without registration.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>
+
+Helpful Articles
+
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>What is Tasbih?</h3>
+
+<p>
+
+Learn the meaning, history, and modern use of Tasbih.
+
+</p>
+
+<a class="btn"
+href="https://onlinetasbihcounter.com/blog/what-is-tasbih/"
+target="_blank">
+
+Read Article
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>What is a Tally Counter?</h3>
+
+<p>
+
+Discover how tally counters are used for counting in everyday life.
+
+</p>
+
+<a class="btn"
+href="https://onlinetasbihcounter.com/blog/what-is-a-tally-counter/"
+target="_blank">
+
+Read Article
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>Visit Our Tool</h3>
+
+<p>
+
+Use the free Online Tasbih Counter for everyday counting.
+
+</p>
+
+<a class="btn"
+href="https://onlinetasbihcounter.com/"
+target="_blank">
+
+Open Tool
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>
+
+Start Counting Today
+
+</h2>
+
+<p style="max-width:800px;margin:auto;text-align:center;color:#d8d8d8;font-size:18px;">
+
+Whether you're tracking dhikr, meditation, exercise repetitions, inventory, attendance, or any other count, Online Tasbih Counter provides a simple, fast, and reliable solution.
+
+</p>
+
+<div style="text-align:center;margin-top:35px;">
+
+<a class="btn"
+href="https://onlinetasbihcounter.com/"
+target="_blank">
+
+Launch Online Tasbih Counter
+
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Online Tasbih Counter
+
+</p>
+
+<p style="margin-top:12px;">
+
+<a href="https://onlinetasbihcounter.com/"
+style="color:#B2FF2E;text-decoration:none;"
+target="_blank">
+
+https://onlinetasbihcounter.com/
+
+</a>
+
+</p>
+
+<p style="margin-top:12px;">
+
+Made with ❤️ by OTC Official
+
+</p>
+
+</footer>
+
 </body>
+
 </html>
